@@ -1,0 +1,40 @@
+// Week 3 documentation
+For week 3 I mainly worked on understanding nested loops and making objects move/balloon code from class, which are two concepts that I think would be really useful for my clock project. I had a lot of trouble with nested loops at first, but that was mainly from small mistakes like forgetting to open or close loops. I'm also have a lot of trouble with the balloon drop exercise from class, which worries me since my first idea for an unconvectional clock was to have a flower that tells time by petals dropping. However, I still have time to figure things out or think of another idea.
+
+// Nested loops
+function setup() {
+  createCanvas(600, 400);
+}
+
+function draw() {
+  background(0);
+  strokeWeight(4);
+  stroke(255);
+  
+  for (var x = 0; x <= width; x += 50) 
+    for (var y = 0; y <= height; y += 50){
+      fill(random(255), 0, random(255));
+      ellipse(x, y, 25, 25);
+  }
+}
+
+// Balloon drop ! 
+let balloon = {};
+
+function setup() {
+  createCanvas(400, 400);
+  balloon.x = random(0,width);
+  balloon.y = 0;
+  balloon.color = "blue";
+  balloon.speed = 1;
+}
+
+function draw() {
+  background(220);
+  fill(balloon.color);
+  circle(balloon.x,balloon.y,50);
+  if (balloon.y<height){
+    balloon.y = balloon.y + balloon.speed;
+    ballon.speed += 0.25;
+  }
+}
