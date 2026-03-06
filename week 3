@@ -1,5 +1,4 @@
 // Week 3 documentation
-For week 3 I mainly worked on understanding nested loops and making objects move/balloon code from class, which are two concepts that I think would be really useful for my clock project. I had a lot of trouble with nested loops at first, but that was mainly from small mistakes like forgetting to open or close loops. I'm also have a lot of trouble with the balloon drop exercise from class, which worries me since my first idea for an unconvectional clock was to have a flower that tells time by petals dropping. However, I still have time to figure things out or think of another idea.
 
 // Nested loops
 function setup() {
